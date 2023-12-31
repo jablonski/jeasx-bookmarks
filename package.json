@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "jeasx": "0.0.2"
+  },
+  "engines": {
+    "node": "20"
   }
 }
