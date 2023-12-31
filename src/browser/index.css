@@ -1,4 +1,4 @@
-/* This file is an example. Delete it at will. */
+@import "./reset.css";
 
 :root {
   --color-primary: #7c2da4;
@@ -7,34 +7,34 @@
   --color-background: #ffffff;
   --box-shadow: 0 0.275rem 0.75rem -0.0625rem var(--color-shadow),
     0 0.125rem 0.4rem -0.0625rem var(--color-shadow);
-  --gradient: radial-gradient(circle, var(--color-primary) 75%, white 100%);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 * {
-  margin: 0;
   color: var(--color-text);
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: var(--color-primary);
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   box-shadow: var(--box-shadow);
   background-color: var(--color-background);
   padding: 1rem;
+  min-height: 1rem;
 }
 
 main {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 section {
@@ -43,32 +43,58 @@ section {
   justify-content: center;
 }
 
-h1 {
-  width: 100%;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-h2 {
-  margin: 1rem;
-  background: var(--gradient);
-  padding: 1rem;
-  width: 100%;
-  color: var(--color-background);
-  font-size: 1.25rem;
-  text-align: center;
-}
-
+h1,
 a {
-  transition: 0.2s transform ease-in-out;
-  margin: 1rem;
-  box-shadow: var(--box-shadow);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  color: var(--color-primary);
   text-align: center;
+}
 
+h1 {
+  font-size: 1.5rem;
+}
+
+textarea {
+  display: block;
+  margin: 1rem;
+  width: 90vw;
+  height: 70vh;
+  font-family: monospace;
+}
+
+a,
+button {
+  transition: 0.2s transform ease-in-out;
+  cursor: pointer;
+  margin: 0.75rem;
+  box-shadow: var(--box-shadow);
+  border: unset;
+  border-radius: 0.5rem;
+  background: unset;
+  padding: 0.75rem;
+  min-width: 10em;
+  color: var(--color-primary);
+  text-decoration: none;
   &:hover {
     transform: scale(1.05);
   }
+}
+
+button[value="edit"],
+button[value="save"] {
+  background-color: #8800ff;
+  color: white;
+}
+
+button[value="cancel"] {
+  background-color: var(--color-shadow);
+  color: black;
+}
+
+img {
+  display: inline;
+  margin-right: 2px;
+}
+
+hr {
+  border: 0;
+  width: 100%;
 }
