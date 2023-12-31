@@ -1,5 +1,5 @@
 {
-  "name": "bookmarker",
+  "name": "jeasx-bookmarker",
   "type": "module",
   "scripts": {
     "start": "node node_modules/jeasx/server.js",
