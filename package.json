@@ -7,7 +7,7 @@
     "dev": "jeasx dev"
   },
   "dependencies": {
-    "jeasx": "0.0.3"
+    "jeasx": "0.0.4"
   },
   "engines": {
     "node": "20"
