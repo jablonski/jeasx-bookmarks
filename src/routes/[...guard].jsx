@@ -14,12 +14,12 @@ export default async function Guard({ request, reply }) {
     return <Forbidden />;
   }
 
-  const form = request.body || {};
-  const action = form["action"];
+  const body = request.body || {};
+  const action = body["action"];
   if (action === "save") {
     await redis.set(
       "bookmarks",
-      form["bookmarks"].split("\n").map((bookmark) => {
+      body["bookmarks"].split("\n").map((bookmark) => {
         const [label, url] = bookmark.split("|");
         return { label, url };
       })

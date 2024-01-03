@@ -3,7 +3,10 @@ import Layout from "./Layout";
 
 export default function Bookmarks({ action, bookmarks }) {
   return (
-    <Layout title="Bookmarks" description=" Bookmark manager powered by Jeasx">
+    <Layout
+      title="Bookmarks"
+      description="Cross browser bookmark manager powered by jeasx"
+    >
       <form method="post">
         <header>
           <h1>Bookmarks</h1>
