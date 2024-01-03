@@ -31,7 +31,7 @@ export default function Bookmarks({ action, bookmarks }) {
               {bookmarks.map(({ url, label }) => (
                 <a href={url} target="_blank">
                   <img
-                    src={`https://favicone.com/${host(url)}?s=128`}
+                    src={`https://favicone.com/${host(url)}?s=32`}
                     width="16"
                     height="16"
                     alt=""
