@@ -46,6 +46,10 @@ export default function Bookmarks({ action, bookmarks }) {
               <button type="submit" name="action" value="edit">
                 <img src="/edit.svg" width="16" height="16" alt="" /> Edit
               </button>
+              <a href="/bookmarks.html">
+                <img src="/download.svg" width="16" height="16" alt="" />
+                Download
+              </a>
             </section>
           )}
         </main>
